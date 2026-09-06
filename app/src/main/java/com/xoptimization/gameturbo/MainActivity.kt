@@ -324,8 +324,8 @@ fun ZeroLoadUltimateUIScreen() {
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Column {
-                            Text("UI HUD [BUTTER SMOOTH]", color = Color(0xFF00FFCC), fontSize = 10.sp, fontWeight.Bold)
-                            Text("LOAD: 0.0% | TEMP: 36°C (NORMAL)", color = Color.White, fontSize = 11.sp)
+                            Text(text = "UI HUD [BUTTER SMOOTH]", color = Color(0xFF00FFCC), fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            Text(text = "LOAD: 0.0% | TEMP: 36°C (NORMAL)", color = Color.White, fontSize = 11.sp)
                         }
                         Button(
                             onClick = { isHudVisible = false },
@@ -333,7 +333,7 @@ fun ZeroLoadUltimateUIScreen() {
                             modifier = Modifier.height(26.dp),
                             contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp)
                         ) {
-                            Text("X", color = Color.White, fontSize = 10.sp)
+                            Text(text = "X", color = Color.White, fontSize = 10.sp)
                         }
                     }
                 }
