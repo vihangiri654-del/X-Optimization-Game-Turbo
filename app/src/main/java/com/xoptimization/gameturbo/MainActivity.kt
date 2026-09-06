@@ -20,7 +20,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            XGameTurboHomeScreen()
+            // MaterialTheme लगाने से Material3 कॉम्पोनेंट्स कभी क्रैश नहीं होंगे!
+            MaterialTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = Color(0xFF0D0E15)
+                ) {
+                    XGameTurboHomeScreen()
+                }
+            }
         }
     }
 }
