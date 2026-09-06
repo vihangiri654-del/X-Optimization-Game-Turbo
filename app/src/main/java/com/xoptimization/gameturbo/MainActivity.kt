@@ -1,4 +1,4 @@
-package com.xoptimization.gameturbo
+ package com.optimizer.gameturbo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -20,7 +20,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // MaterialTheme लगाने से Material3 कॉम्पोनेंट्स कभी क्रैश नहीं होंगे!
             MaterialTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -104,3 +103,4 @@ fun XGameTurboHomeScreen() {
         }
     }
 }
+                       
